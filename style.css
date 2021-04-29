@@ -1,0 +1,371 @@
+body {
+    background-color: white;
+}
+
+
+#my-header {
+    width: 100%;
+    padding: 2px 100px 2px 100px;
+    margin-left: -10px;
+    margin-right: -100px;
+    margin-top: -20px;
+    background-color: #2E8BC0;
+    position: fixed;
+}
+#my-list {
+    display:inline;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arcade;
+}
+
+h2 {
+    text-align: center;
+    color: #0C2D48;
+    font-family: Arcade;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0C2D48;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    font-size: 18px;
+    box-shadow: 3px 3px 5px lightgray;
+    border-radius: 5px;
+}
+
+#add-Button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#save-button {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+#my-heading {
+    margin-left: -12%;
+    margin-right: auto;
+    margin-bottom: 9px;
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 58px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+/*
+.split-left {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 6.5%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.split-right{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 6.5%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+*/
+
+ul {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    word-break: break-all;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+li {
+    font-size: 20px;
+    margin-right: 8%;
+    display: block;
+    padding-top: 10px;
+}
+
+#logHeading{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 27%;
+    margin-bottom: 1%;
+    text-align: center;
+    height: 25px;
+    font-size: 20px;
+
+}
+
+#logRating {
+    width: 40px;
+    height: 20px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    vertical-align: top;
+}
+
+#placeDiv {
+    margin-left: 36.5%;
+    margin-top: 1%;
+}
+
+#logPlace {
+    text-align: center;
+    height: 20px;
+    font-size: 18px;
+}
+
+input {
+    color: #0C2D48;
+    background-color: white;
+    font-weight: bold;
+    border-color:#0C2D48; 
+}
+ h6{
+     font-family: Maze;
+     display: inline;
+     font-size: 24px;
+     color: white;
+     margin-left: 9px;
+     padding-top: 13px;
+     vertical-align: -webkit-baseline-middle;
+     
+ }
+
+@font-face {
+    font-family: Arcade;
+    src: url(fonts/ka1.ttf)
+}
+
+@font-face {
+    font-family: Maze;
+    src: url(fonts/Maze.ttf)
+}
+
+@font-face {
+    font-family: unbutton;
+    src: url(fonts/unbutotn.ttf)
+}
+
+.heading-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating-display {
+    float: right;
+    position: relative;
+    right: 10px;
+    font-size: 18px;
+    font-family: arcade;
+    margin-bottom: 3%;
+    margin-left: -10%;
+}
+
+
+div.place-display {
+    text-align: left;
+    float: left;
+    display: block;
+    font-size: 18px;
+    margin-right: 1%;
+    position: relative;
+    left: 8px;
+}
+
+
+.date-display {
+    text-align: left;
+    display: inline-flexbox;
+    font-size: 14px;
+    margin-top: 4%;
+    position: relative;
+    left: 8px;
+}
+
+.entry-display {
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#delete-button {
+    display: none;
+    margin-right: -10%;
+    float: left;
+    background: none;
+    position: relative;
+    left: 10px;
+    margin-top: -2px;
+    color: white;
+    border: white;
+    border-radius: 3px;
+}
+
+#edit-button {
+    display:none;
+    float: right;
+    margin-top: -3%;
+    margin-right: 5px;
+    position: relative;
+    background: none;
+    color: white;
+    border: white;
+    border-radius: 4px;
+}
+
+#my-log {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.log-entry {
+    border: 1px solid white;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    background-color: #0C2D48;
+    width: 90%;
+}
+
+html, body {
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+}
+
+.log-entry:hover {
+    background-color: rgb(175, 183, 207);
+}
+
+.log-entry:hover #delete-button {
+    display: block;
+    background-color: rgb(187, 22, 22);
+}
+
+.log-entry:hover #edit-button {
+    display: block;
+    background-color: rgb(53, 177, 42);
+
+}
+
+#delete-button:hover {
+    border: 2px solid white;
+}
+
+#edit-button:hover {
+    border: 2px solid white;
+}
+
+#journal {
+    display: none;
+}
+
+#login {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0C2D48;
+  padding: 50px 100px;
+  text-align: center;
+  border: white;
+  border-radius: 10px;
+  color: white;
+  font-family: arcade;
+}
+
+.loginForm {
+    display: block;
+    height: 30px;
+    width: 220px;
+}
+
+.authentication-buttons {
+    margin-top: 5px;
+    background: none;
+    color: white;
+    border: white;
+    border-radius: 2px;
+    background-color: rgb(53, 177, 42);
+    height: 25px;
+    width: 65px;
+}
+
+#switch-to-login, #switch-to-signup {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: none;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+#switch-to-login:hover, #switch-to-signup:hover {
+    color: lightgray;
+}
+
+#switch-to-signup {
+    display: inline;
+}
+
+#loginButton {
+    display: inline;
+}
+
+p {
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: lightpink;
+    color: black;
+    border-radius: 2px;
+    border: 2px solid white;
+}
+
+#fNameEntry, #lNameEntry, #signupButton, #switch-to-login {
+    display: none
+}
+
+

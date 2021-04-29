@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <div id="my-header">
+            <h1 id="my-heading">Digi-Journal</h1>
+        </div>
+
+        <div id='login'>
+            <h3 id='login-header'>LOGIN</h3>
+            <input type='text' class='loginForm' id='fNameEntry' placeholder="First Name">
+            <input type='text' class='loginForm' id='lNameEntry' placeholder="Last Name">
+            <input type='email' class='loginForm' id='email' placeholder="Email">
+            <input type='password' class='loginForm' id='password' placeholder="Password">
+            <div id='login-buttons'>
+                <button class='authentication-buttons' id='loginButton'>login</button>
+                <button class='authentication-buttons' id='signupButton'>sign up</button>
+            </div>
+            <button id='switch-to-login'>Already a User? Go to Login</button>
+            <button id='switch-to-signup'>Not a User? Go to Sign Up</button>
+            <p id='error-message'>Blank Fields, Try Again</p>
+        </div>
+
+        <div id='journal'>
+            <div class="split left">
+                <div id="new-entry">
+                    <h2>New Entry</h2>
+                    <div>
+                        <textarea rows='1' cols='35' id='logHeading' placeholder='Heading'></textarea>
+                        <h6>Rating:</h6>
+                        <input type='number' id='logRating' placeholder="/10">
+                    </div>
+                    <div>
+                        <textarea rows="25" cols="70" id="myTextArea"></textarea>
+                    </div>
+                    <div id='placeDiv'>
+                        <input type='text' id='logPlace' placeholder='Where Are You?'>
+                    </div>
+                    <button id = "add-Button">submit</button>
+                    <button id = 'save-button'>save</button>
+                </div>
+            </div>
+
+            <div class='split right'>
+                <div id="old-entry">
+                    <h2>Old Entries</h2>
+                    <div id="my-list">
+                        <ul id="my-log">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="journal.js"></script>
+    </body>
+</html>
