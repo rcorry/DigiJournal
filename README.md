@@ -1,5 +1,8 @@
 # Digi-Journal
 
+## Description
+An online, state persistant, journal web application.  Provide a heading, body, place, and mood rating to keep track of your daily life.  Provide an email to sign up and keep track of your entries.
+
 ## Resource
 
 **Log**
@@ -54,3 +57,5 @@ Delete log member       | DELETE | /logs/*\<id\>*
 
 ## Password Hashing Method
 * bcrypt
+
+![demo](https://github.com/rcorry/DigiJournal/blob/main/DigiJournal.png)
