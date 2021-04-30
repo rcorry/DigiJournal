@@ -58,4 +58,4 @@ Delete log member       | DELETE | /logs/*\<id\>*
 ## Password Hashing Method
 * bcrypt
 
-![demo](https://github.com/rcorry/DigiJournal/blob/main/DigiJournal.png)
+![demo](https://github.com/rcorry/DigiJournal/blob/master/DigiJournal.png)
